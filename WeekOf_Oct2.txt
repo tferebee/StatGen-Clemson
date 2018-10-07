@@ -1,12 +1,12 @@
-####################################################################################
-Class on Tuesday/ Thursday 10.02.18
-# 	Make a directory called statgen
-#	Make a directory called maize_v40_reference
-# 	Download Maize reference sequence, Index it with bowtie2 (will take a while)
-# 	Make a raw data directory 
-#	Copy 10 maize individuals (sequences) to the folder
-#	Launch the process_array.script to run QC and trimming on the 10 samples
-####################################################################################
+
+## Class on Tuesday/ Thursday 10.02.18
+Make a directory called statgen
+Make a directory called maize_v40_reference
+Download Maize reference sequence, Index it with bowtie2 (will take a while)
+Make a raw data directory 
+Copy 10 maize individuals (sequences) to the folder
+Launch the process_array.script to run QC and trimming on the 10 samples
+
 
 ## make a directory called statgen
 ```
