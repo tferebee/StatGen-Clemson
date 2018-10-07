@@ -49,7 +49,7 @@ maize_ref.1.bt2  maize_ref.3.bt2  maize_ref.rev.1.bt2  Zea_mays.AGPv4.40.gtf
 maize_ref.2.bt2  maize_ref.4.bt2  maize_ref.rev.2.bt2  Zea_mays.AGPv4.dna.toplevel.fa
 ```
 ---
-## Part II:  Make a raw_data directory and copy 10 maize individuals (sequences) to the folder
+# Part II:  Make a raw_data directory and copy 10 maize individuals (sequences) to the folder
 ## Move up a level in your directory
 
 ```
@@ -102,32 +102,28 @@ i
 ```
 ## just _change the username to your username_
 
-```
-ESC :wq
+```ESC :wq
 ```
 
 ## open the process_array.script script and modify the 24th line
-```
+
 vi process_array.script
 ```
-
-# from export SOURCEPATH=/home/saski/statgen
-
-# _just change the username_
-ESC :wq```
+from export SOURCEPATH=/home/saski/statgen # _just change the username_
+ESC :wq 
+```
 ---
-## Part 3 Launch the process_array.script to run QC and trimming on   the 10 samples
+# Part 3: Launch the process_array.script to run QC and trimming on   the 10 samples
 ## Open a new terminal window and login to the user node
 
 ```
-cd /home/saski/statgen/scripts  # use your user name here
-	
+cd /home/saski/statgen/scripts  # use your user name here	
 ./create_submit.bash
-```	
-##there should be 10 .pbs scripts created and automatically submitted to the cluster
-# @To see what is running in your queue
-	```qstat -u username```
-
+## Checkpoint: There should be 10 .pbs scripts created and automatically submitted to the cluster
+## To see what is running in your queue
+```
+qstat -u username
+```
 
 
 
