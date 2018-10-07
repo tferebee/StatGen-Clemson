@@ -117,16 +117,17 @@ vi process_array.script
 ESC :wq```
 ---
 ## Part 3 Launch the process_array.script to run QC and trimming on   the 10 samples
-## open a new terminal window and login to the user node
+## Open a new terminal window and login to the user node
 
+```
 cd /home/saski/statgen/scripts  # use your user name here
 	
 ./create_submit.bash
 ```	
 ##there should be 10 .pbs scripts created and automatically submitted to the cluster
 # @To see what is running in your queue
-	qstat -u username
-```
+	```qstat -u username```
+
 
 
 
