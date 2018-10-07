@@ -95,20 +95,16 @@ cp /scratch3/saski/statgen/scripts/create_submit.bash .
 ## open the create_submit.bash script and modify the 6th line
 ```
 vi create_submit.bash
-```
 ## from inputpwd=/home/saski/statgen/raw_data
-```
 i
-```
-## just _change the username to your username_
-
-```ESC :wq
+# just _change the username to your username_
+ESC :wq
 ```
 
 ## open the process_array.script script and modify the 24th line
-
-vi process_array.script
 ```
+vi process_array.script
+
 from export SOURCEPATH=/home/saski/statgen # _just change the username_
 ESC :wq 
 ```
@@ -116,12 +112,12 @@ ESC :wq
 # Part 3: Launch the process_array.script to run QC and trimming on   the 10 samples
 ## Open a new terminal window and login to the user node
 
+
 ```
 cd /home/saski/statgen/scripts  # use your user name here	
 ./create_submit.bash
 ## Checkpoint: There should be 10 .pbs scripts created and automatically submitted to the cluster
 ## To see what is running in your queue
-```
 qstat -u username
 ```
 
