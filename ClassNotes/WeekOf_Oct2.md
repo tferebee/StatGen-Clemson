@@ -117,7 +117,7 @@ ESC :wq
 cd /home/saski/statgen/scripts  # use your user name here	
 ./create_submit.bash
 ## Checkpoint: There should be 10 .pbs scripts created and automatically submitted to the cluster
-## To see what is running in your queue
+## To see what is running in your queue 
 qstat -u username
 ```
 
