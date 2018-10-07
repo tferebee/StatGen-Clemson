@@ -1,44 +1,3 @@
-## Log on to the Palmetto Cluster User/Head Node
-
-	ssh saski@login.palmetto.clemson.edu
-
-## launch an interactive session
-
-	#see what resources are available
-	whatsfree
-	
-	#launch a script for an interactive node
-	qsub -I -l select=1:ncpus=16:mem=60gb:interconnect=10ge,walltime=72:00:00
-
-
-## to modify your .bashrc
-	vi ~/.bashrc
-
-## Add this line
-	export MODULEPATH=/zfs/gcl/software/modulefiles:$MODULEPATH
-
-## To save using a VI editor
-	push ESC then :wq
-
-## source your bashrc -- you only need to do this 1 time after you add the module path line
-	source ~/.bashrc
-
-
-## Module files
-	
-	
-	
-	#see what modules are available
-	module avail
-
-	#NOTE - you should see the modules available at /zfs/gcl/software/modulefiles
-
-	#see what modules you have loaded
-	module list
-
-	#to clear modules
-	mocule clear
-
 ####################################################################################
 Class on Tuesday/ Thursday 10.02.18
 # 	Make a directory called statgen
@@ -49,28 +8,25 @@ Class on Tuesday/ Thursday 10.02.18
 #	Launch the process_array.script to run QC and trimming on the 10 samples
 ####################################################################################
 
-
-
 ## make a directory called statgen
-
-	mkdir statgen
-	cd statgen
-	pwd
-	#you should see this path /home/saski/statgen
-
+```
+mkdir statgen
+cd statgen
+pwd
+```	
 ## make a directory called maize_v40_reference
 
 	mkdir maize_v40_reference
 	cd maize_v40_reference
 	
 ## Download and index the reference sequence
+
 wget ftp://ftp.ensemblgenomes.org/pub/release-40/plants/fasta/zea_mays/dna/Zea_mays.AGPv4.dna.toplevel.fa.gz
 wget ftp://ftp.ensemblgenomes.org/pub/release-40/plants/gtf/zea_mays/Zea_mays.AGPv4.40.gtf.gz
 
 ## unzip the files
+
 gunzip *
-
-
 
 ## Index the reference assembly for alignment with Bowtie2
 
@@ -91,7 +47,7 @@ pwd
 mkdir raw_data
 cd raw_data
 
-##copy files to your directory
+## copy files to your directory DO NOT CHANGE NAME
 cp /scratch3/saski/statgen/raw_data/statgen_*.gz .
 
 ## list the files -- you should see the below
