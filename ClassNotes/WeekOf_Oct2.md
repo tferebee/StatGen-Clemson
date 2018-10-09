@@ -95,9 +95,10 @@ cp /scratch3/saski/statgen/scripts/create_submit.bash .
 ## open the create_submit.bash script and modify the 6th line
 ```
 vi create_submit.bash
-## from inputpwd=/home/saski/statgen/raw_data
+# enter the letter "i" to start editing
 i
-# just _change the username to your username_
+## from inputpwd=/home/saski/statgen/raw_data
+# just _change the username (saski) to your username_
 ESC :wq
 ```
 
