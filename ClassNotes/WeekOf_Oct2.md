@@ -14,8 +14,8 @@ Part II
 ## Make a directory called statgen
 ```
 mkdir statgen
-cd statgen
-pwd
+cd statgen     #change directory
+pwd            #print working directory
 ```	
 
 ## Make a directory called maize_v40_reference
@@ -54,7 +54,7 @@ maize_ref.2.bt2  maize_ref.4.bt2  maize_ref.rev.2.bt2  Zea_mays.AGPv4.dna.toplev
 
 ```
 cd ..  
-pwd
+pwd        #this will show the directory you are currently in
 # you should be in statgen: /home/saski/statgen
 mkdir raw_data
 cd raw_data
